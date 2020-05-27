@@ -1,0 +1,32 @@
+/* "." hace referencia a la clase */
+/* "nada" hace referencia al elemento de tipo */
+/* "#" hace referencia al ID */
+
+button{
+    border:1px solid black;
+    border-radius: 0.2rem;
+    background-color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+input{
+    border:1px solid black;
+    border-radius: 0.1rem;
+}
+/* button:active{
+    display: none;
+} */
+table{
+    border:1px solid black;
+    border-radius: 0.1rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.ocultar {
+    display: none;
+}
+.mostrar {
+    display: block;
+}
