@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js" type="module" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  /> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/pisteando.jpg" />
+        <nav>
+            <a href="#">Nosotros</a>
+            <a href="#">Anuncio</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h2>ADMINISTRACIÓN</h2>
+            <img src="./img/titulo.jpg" />
+            <div class="row">
+                <article id="artF" class="col-4 offset-4 mt-5">
+                    <h2>Formulario Personas</h2>
+                    <form action="#" id="form1" aria-placeholder="informacion del anuncio">
+                        <input type="text" id="txtId" name="id" class="ocultar">
+                        <label for="txtTitulo">Titulo</label>
+                        <input type="text" id="txtTitulo" name="titulo" placeholder="Título" class="form-control">
+                        <label>transacción: </label>
+                        <br>
+                        <select name="transaccion" id="selTrans" required=>
+                            <option disabled selected>---Elegir Transacción---</option>
+                            <option value="venta">Venta</option>
+                            <option value="alquiler">Alquiler</option>
+                            <option value="permuta">Permuta</option>
+                        </select>
+                        <br>
+                        <label for="txtDescrip">descripción</label>
+                        <input type="text" id="txtDescrip" name="descripción" class="form-control" placeholder="descripción">
+                        <label for="txtPrecio">precio</label>
+                        <input type="number" id="txtPrecio" name="precio" class="form-control" placeholder="precio">
+                        <img src="./img/puerta.png" alt="">
+                        <input type="number" id="txtBaño" name="baño" class="form-control" placeholder="Puertas">
+                        <img src="./img/kms.png" alt="">
+                        <input type="number" id="txtautos" name="autos" class="form-control" placeholder="kms">
+                        <img src="./img/potencia.jpg" alt="">
+                        <input type="number" id="txtDormi" name="dormitorios" class="form-control" placeholder="Potencia">
+                        <br>
+                    </form>
+                </article>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <article id="art2" class="col-4 offset-4 mt-5">
+                    <button id="btnAlta" type="submit" name="alta" class="btn btn-primary">Guardar</button>
+                    <div id="info"></div>
+                </article>
+            </div>
+        </section>
+        
+        <br>
+        <section class="container">
+            <div class="row" id="contTabla">
+                <article id="artB" class="col-4 offset-4 mt-5">
+                    <button id="btnGuarda" type="submit" name="Guarda" class="btn btn-primary ocultar">Guardar</button>
+                    <button id="btnBaja" type="submit" name="Eliminar" class="btn btn-primary ocultar">Eliminar</button>
+                    <button id="btnCancela" type="submit" name="Cancela" class="btn btn-primary ocultar">Cancelar</button>
+                </article>
+                <article id="art3" class="col-4 offset-4 mt-5" >
+                    <div id="divTabla" class="tabla">
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Nosotros</a>
+            <a href="#">Anuncio</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <p>Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+
+</html>
