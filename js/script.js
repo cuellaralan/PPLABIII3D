@@ -68,6 +68,13 @@ btnBaja.addEventListener('click', (e) => {
     bajaPersona(valId); 
 });
 
+let btnCancela = document.querySelector('#btnCancela');
+btnCancela.addEventListener('click', (e) => {
+    e.preventDefault();//cancelamos el comportamiento por defecto
+    console.log('submit cancelado - cancela');   
+    cancela();
+});
+
 let btnGuarda = document.querySelector('#btnGuarda');
 btnGuarda.addEventListener('click', async (e) =>{
     e.preventDefault();//cancelamos el comportamiento por defecto
